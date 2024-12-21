@@ -1,0 +1,58 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e0f7fa;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #00796b;
+    margin-bottom: 20px;
+}
+
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 120px);
+    grid-template-rows: repeat(3, 120px);
+    gap: 10px;
+}
+
+.cell {
+    width: 120px;
+    height: 120px;
+    background-color: #ffffff;
+    border: 2px solid #00796b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cell:hover {
+    background-color: #b2dfdb;
+}
+
+.cell.x {
+    color: #d32f2f;
+}
+
+.cell.o {
+    color: #1976d2;
+}
+
+.winner {
+    background-color: #4caf50;
+    color: white;
+}
+
+#status {
+    margin-top: 20px;
+    font-size: 1.5em;
+    text-align: center;
+}
